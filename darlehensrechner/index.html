@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Darlehensrechner</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css">
+<link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-alpine.css">
+<link rel="stylesheet" href="style.css">
+<script src="daltonFinanz.js"></script>
+<script src="diagrammFinanz.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.js"></script>
+<script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
+
+<style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+    .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+</style>
+<body>
+
+<div class="w3-top">
+    <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+        <a href="#aboutUs" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About Us</a>
+        <a href="#kontakt" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Kontakt</a>
+        <a href="#infoSeite" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Info Wiki</a>
+        <a href="#rechner" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Rechner</a>
+    </div>
+</div>
+
+<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+    <h1 class="w3-margin w3-jumbo">Darlehensrechner</h1>
+    <p class="w3-xlarge">Natürlich rechne ich hier!</p>
+    <p style="font-size: 15px">"Ich bin doch nicht blöd"</p>
+</header>
+
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+        <div class="w3-twothird">
+            <h1 id="aboutUs">About Us</h1>
+            <h5 class="w3-padding-32">Darlehensrechner mit taggenauer Berechnung</h5>
+            <h5>"Hier gibt es Möglichkeiten zu wachsen"</h5><p style="font-size: small">-Hofer Alex</p>
+            <p class="w3-text-grey">Wir stehen für Sicherheit, Einfachkeit, Schnelligkeit zudem wir sind überall in der Welt vernetzt!<br>
+                Zudem bestehen wir aus einem Team hochqualifizierter Oberschüler.
+            </p>
+        </div>
+        <img id="aboutUsBild" src="bilder/about.png">
+    </div>
+</div>
+
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+    <div class="w3-content">
+            <img id="kontaktBild" src="bilder/telefon.png">
+
+        <div class="w3-twothird">
+            <h1 id="kontakt">Kontakt</h1>
+            <h5 class="w3-padding-32">Rund um die Uhr erreichbar</h5>
+            <p class="w3-text-grey">Grüne Nummer: 6969696969</p>
+            <div class="w3-xlarge w3-padding-32">
+                <a class="fa fa-facebook-official w3-hover-opacity" href="https://www.facebook.com/" style="text-decoration:none;"></a>
+                <a class="fa fa-instagram w3-hover-opacity" href="https://www.instagram.com/fallmemerayer/" style="text-decoration:none;"></a>
+                <a class="fa fa-snapchat w3-hover-opacity" href="https://www.snapchat.com/" style="text-decoration:none;"></a>
+                <a class="fa fa-pinterest-p w3-hover-opacity" href="https://www.pinterest.com/" style="text-decoration:none;"></a>
+                <a class="fa fa-twitter w3-hover-opacity" href="https://twitter.com/" style="text-decoration:none;"></a>
+                <a class="fa fa-linkedin w3-hover-opacity" href="https://de.linkedin.com/" style="text-decoration:none;"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="w3-row-padding w3-white w3-padding-64 w3-container">
+    <div class="w3-content">
+        <div class="w3-twothird">
+            <h1 id="infoSeite">Info Wiki</h1>
+
+            <details id="infoSeiteDetails">
+            <h4 class="w3-padding-32">Begriffserklärung:</h4>
+            <h5>Darlehensvertrag</h5>
+            <p class="w3-text-grey">
+                Der Darlehensvertrag ist ein Vertrag zwischen Darlehensgeber und Darlehensnehmer über einen Geldbetrag (Darlehen). <br>
+                Durch den Darlehensvertrag:
+                <ul class="w3-text-grey">
+                    <li>wird der Darlehensgeber verpflichtet, dem Darlehensnehmer einen Geldbetrag in der vereinbarten Höhe zur Verfügung zu stellen.</li>
+                    <li>der Darlehensnehmer ist verpflichtet, die vereinbarten Zinsen + das zur Verfügung gestellte Darlehen zurückzuzahlen.</li>
+                </ul>
+            </p>
+            <h5>Darlehensbetrag</h5>
+            <p class="w3-text-grey">
+                Der Darlehensbetrag bzw. die Darlehenssumme bezeichnet die im Darlehensvertrag vereinbarte Höhe des auszuzahlenden Betrags. <br>
+                Die Höhe der Darlehenssumme bei zum Beispiel einem Bau- oder Kaufvorhaben hängt davon ab, wie viel Eigenkapital hierfür eingesetzt werden kann und wie groß der finanzielle Spielraum für die monatlichen Darlehensraten ist.
+            </p>
+            <h5>Kreditlaufzeit/Dauer</h5>
+            <p class="w3-text-grey">
+                Bei der Kreditlaufzeit handelt es sich um jenen Zeitraum, den ein Kreditgeber für die Rückzahlung eines Darlehens gewährt.<br>
+                Diese Phase startet mit der Auszahlung der Kreditsumme und endet erst dann, wenn das Darlehen vollständig abbezahlt ist. <br>
+            </p>
+            <h5>Zinssatz</h5>
+            <p class="w3-text-grey">
+                Der Zinssatz ist in der Wirtschaft der in Prozent ausgedrückte Preis für Geld oder Kapital (bei zinsgebundenen Finanzprodukten wie Krediten oder Kapitalanlagen), ausgedrückt als Prozentangabe des Zinses. <br>
+            </p>
+            <h5>Gesamtzinsen</h5>
+            <p class="w3-text-grey">
+                Der Gesamtzins ist der gesamte Zinsbetrag in einer Währung, den man über die Kreditlaufzeit an den Kreditgeber zahlen muss. <br>
+            </p>
+            <h5>Tilgung</h5>
+            <p class="w3-text-grey">
+                Tilgung nennt man im Finanzwesen die planmäßige oder außerplanmäßige Rückzahlung von Schulden. Bei Tilgungen handelt es sich jedoch um den monatlichen Rückzahlungsbetrag ohne Zinsen.  <br>
+            </p>
+            <h5>Rate/Annuität</h5>
+            <p class="w3-text-grey">
+                Die Annuität oder Rate ist der Betrag den man jedes Mal an den Kreditgeber abgibt, es besteht aus den Zinsen und Tilgungsraten.  <br>
+            </p>
+			<h5>Agio/Kosten pro Rate</h5>
+            <p class="w3-text-grey">
+                Unter einem Agio versteht man den Aufschlag, der zu dem Darlehensbetrag dazuaddiert wird.
+            </p>
+            <h5>Eff. Zinssatz</h5>
+            <p class="w3-text-grey">
+                Der effektive Zinssatz bezeichnet die Gesamtkosten, die für einen bestimmten Kreditbetrag insgesamt bezahlt werden müssen. Diese Kosten setzen sich aus dem Zinssatz, der Bearbeitungsgebühr sowie weiteren anfallenden Kosten zusammen.<br>
+            </p>
+            <h5>Tilgungsplan</h5>
+            <p class="w3-text-grey">
+                Unter einem Tilgungsplan versteht man eine Liste in tabellarischer Form über die künftigen Tilgungszahlungen.
+            </p><br>
+			<h4>Zum Code:</h4>
+            <h5>Javascript Bibliotheken</h5>
+            <p class="w3-text-grey">Als Bibliotheken wurden verwendet: <br>
+                <ul class="w3-text-grey">
+                    <li>für den Tilgungsplan (Tabelle) - <a href="https://www.ag-grid.com/">AG Grid</a>
+                        <ul>
+                            <li>AG Grid ist ein funktionsreiches Datagrid/Datenraster, das für die wichtigsten JavaScript-Frameworks entwickelt wurde.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        für das Diagramm - <a href="https://www.chartjs.org/">Chart.js</a>
+                        <ul>
+                            <li>Chart.js ist eine Bibliothek mit der man auf einfache Weise animierte, interaktive Diagramme auf Websiten einfügen kann.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </p>
+            <h5>CSS</h5>
+            <p class="w3-text-grey">
+                Als CSS wurde ein eigenes CSS von W3Schools verwendet - <a href="https://www.w3schools.com/w3css/default.asp">W3.CSS</a>
+            </p>
+            </details>
+        </div>
+    </div>
+</div>
+
+
+<div class="w3-row-padding w3-grey w3-padding-64 w3-container">
+    <div class="w3-content">
+        <div class="w3-twothird">
+            <h1 id="rechner" class="w3-text-white">Darlehensrechner</h1>
+            <h5>Darlehensbetrag</h5>
+            <input id="feld_darlehensbetrag" class="w3-input w3-padding-16" type="number" placeholder="Betrag  €">
+            <h5>Kreditlaufzeit/Dauer</h5>
+            <input id="feld_dauer" class="w3-input w3-padding-16" type="number" placeholder="Anzahl Monate/Vierteljahre/Halbjahre/Jahre">
+            <h5>Zinssatz</h5>
+            <input id="feld_zinssatz" class="w3-input w3-padding-16" type="number" placeholder="Zinsen  %">
+            <h5>Rate/Annuität</h5>
+            <input id="feld_monatlicheRate" class="w3-input w3-padding-16" type="number" placeholder="Rate/Annuität  €">
+            <h5>Gesamtzinsen</h5>
+            <input id="feld_gesamtzinsen" class="w3-input w3-padding-16" type="number" placeholder="Gesamtzinsen  €" readonly>
+            <h5>Gesamte Zahlung</h5>
+            <input id="feld_gesGezahlt" class="w3-input w3-padding-16" type="number" placeholder="Gesamt zurück gezahlt  €" readonly>
+            <h5>Kosten pro Rate</h5>
+            <input id="feld_kostenProRate" class="w3-input w3-padding-16" type="number" placeholder="Kosten  €">
+            <h5>Effektiver Zinssatz</h5>
+            <input id="feld_effZinssatz" class="w3-input w3-padding-16" type="number" placeholder="Eff. Zinssatz (PAngV*)  %" readonly><br>
+
+            <form>
+                <input type="radio" id="monatlich" name="rueckzahlungstermine" class="rueckzahlung">
+                <label for="monatlich" class="rueckzahlungText">Monatlich</label>
+                <input type="radio" id="jaehrlich" name="rueckzahlungstermine" class="rueckzahlung" checked="true">
+                <label for="jaehrlich" class="rueckzahlungText">Jährlich</label> <br>
+            </form>
+
+
+            <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" type="button" onclick="darlehen_berechnen()">Berechne!</button>
+            <button class="w3-button w3-red w3-padding-large w3-large w3-margin-top" type="button" onclick="tilgungs_diagramm()">Tilgungsplan und Diagramm erstellen!</button> <br><br>
+
+            <!-- Tabelle -->
+            <div id="tilgungs_plan" class="ag-theme-alpine" style="display: none">
+            </div><br>
+
+            <!-- Diagramm -->
+            <div id="tilgungs_diagramm" style="display: none">
+                <canvas id="myChart"></canvas>
+                <p style="color: red">Rot - Tilgungszahlungen</p>
+                <p style="color: lawngreen">Grün - Zinszahlungen</p>
+                <p style="color: blue">Blau - Annuität</p>
+            </div>
+
+        </div>
+        <div class="w3-third w3-center">
+            <img id="rechnerBild" src="bilder/rechner.png">
+        </div>
+    </div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Der beste Darlehensrechner</h1>
+    <p style="font-size: 15px">©Hofer Alex - 5BT - <a href="https://www.fallmerayer.it/">Fallmerayer</a></p>
+</div>
+</body>
+</html>

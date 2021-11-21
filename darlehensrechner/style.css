@@ -1,0 +1,36 @@
+#rechnerBild {
+    height: 300px;
+    width: 300px;
+    margin-top: 70px;
+    float: right;
+}
+#kontaktBild {
+    height: 260px;
+    width: 260px;
+    margin-top: 70px;
+    float: right;
+}
+#aboutUsBild {
+    height: 250px;
+    width: 250px;
+    margin-top: 70px;
+    float: right;
+}
+.rueckzahlung{
+    height: 20px;
+    width: 20px;
+}
+.rueckzahlungText{
+    font-size: 17px;
+    float: top;
+}
+#tilgungs_plan{
+    height: 500px;
+    width: 100%;
+    max-width: 750px;
+}
+#myChart{
+    width:100%;
+    max-width:750px;
+    display: none;
+}
